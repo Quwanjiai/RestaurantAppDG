@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/balckdrag"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="417dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="235dp"
+            app:srcCompat="@drawable/lego" />
+
+        <TextView
+            android:id="@+id/nameT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/textCH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:hint="Customer name?"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <Button
+            android:id="@+id/nameBTN"
+            android:layout_width="163dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_button"
+            android:text="Comfrim"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/MenuBTN"
+        android:layout_width="266dp"
+        android:text="View Menu"
+        android:background="@drawable/custom_button"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        />
+
+</LinearLayout>

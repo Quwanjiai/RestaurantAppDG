@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dragonpp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="SUSHIKI"
+        android:textColor="#FFFFFFFF"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:background="@drawable/ribb"
+        android:layout_height="44dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:text="Special rolls"
+        android:textColor="@color/white"
+        android:background="@drawable/thecool"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="112dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/t1"
+            android:layout_width="229dp"
+            android:layout_height="match_parent"
+            android:checked="false"
+            android:text="Triger rolls"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tigeroll" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="112dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/t2"
+            android:layout_width="229dp"
+            android:layout_height="match_parent"
+            android:checked="false"
+            android:text="Rainbow rolls"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rainbow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="112dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/t3"
+            android:layout_width="229dp"
+            android:layout_height="match_parent"
+            android:checked="false"
+            android:text="Dragon Boy rolls"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dragonboy" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="273dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="@drawable/thecool"
+            android:text="Drinks"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="146dp"
+            android:background="@drawable/pn">
+
+            <RadioButton
+                android:id="@+id/d1"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:text="Water"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <RadioButton
+                android:id="@+id/d2"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:text="Americano"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+        </RadioGroup>
+
+        <RadioButton
+            android:id="@+id/d3"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:text="Espresso martini."
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
