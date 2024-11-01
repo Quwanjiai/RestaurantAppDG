@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         t1 = (RadioButton) findViewById(R.id.t1);
         t2 = (RadioButton) findViewById(R.id.t2);
         t3 = (RadioButton) findViewById(R.id.t3);
