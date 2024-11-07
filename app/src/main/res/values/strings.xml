@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">RestaurantAppDG</string>
-    <string name="Sushi1">Trigger Rolls</string>
+    <string name="rainbow_rolls">Rainbow Rolls</string>
+    <string name="tiger_rolls">Tiger Rolls</string>
+    <string name="sidesBTN">Sides</string>
+    <string name="sides1">Fried Rice</string>
+    <string name="sides2">Wasabi</string>
+    <string name="sides3">Yakitori</string>
+    <string name="plusBT">+</string>
 </resources>
