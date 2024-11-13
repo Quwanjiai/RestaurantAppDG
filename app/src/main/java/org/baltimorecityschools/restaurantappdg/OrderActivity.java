@@ -1,8 +1,11 @@
 package org.baltimorecityschools.restaurantappdg;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -16,19 +19,23 @@ public class OrderActivity extends AppCompatActivity {
     private SushiOrder sushiOrder;
     private TextView PriceText;
     private double basePrice = 9.00;
+    private LinearLayout linearLayout;
 
+    Button sideBTNN;
     Button plusbutton;
     int plus1;
     int plus2;
     Button plusbutton2;
     Button Negbutton;
     Button Negbutton2;
+    CheckBox checkisct;
 
     TextView numbV1;
 
     TextView numbV2;
 
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +46,10 @@ public class OrderActivity extends AppCompatActivity {
         plus1=0;
 
         plus2=0;
+
+        sideBTNN = (Button) findViewById(R.id.sideBTN);
+
+        checkisct = (CheckBox) findViewById(R.id.checkisc);
 
         plusbutton2 = (Button) findViewById(R.id.plusbutton2);
 
@@ -96,6 +107,8 @@ public class OrderActivity extends AppCompatActivity {
                 numbV2.setText(String.valueOf(plus2));
             }
         });
+
+        checkisct.setChecked(true);
 
         };
     }

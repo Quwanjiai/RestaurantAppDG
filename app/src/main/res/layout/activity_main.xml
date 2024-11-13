@@ -87,7 +87,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="302dp"
+        android:layout_height="266dp"
         android:orientation="vertical">
 
         <TextView
@@ -100,13 +100,13 @@
 
         <RadioGroup
             android:layout_width="match_parent"
-            android:layout_height="146dp"
+            android:layout_height="149dp"
             android:background="@drawable/pn">
 
             <RadioButton
                 android:id="@+id/d1"
                 android:layout_width="match_parent"
-                android:layout_height="74dp"
+                android:layout_height="48dp"
                 android:text="Water"
                 android:textColor="@color/white"
                 android:textSize="15dp" />
@@ -114,33 +114,32 @@
             <RadioButton
                 android:id="@+id/d2"
                 android:layout_width="match_parent"
-                android:layout_height="73dp"
+                android:layout_height="54dp"
                 android:text="Americano"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <RadioButton
+                android:id="@+id/d3"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Espresso martini."
                 android:textColor="@color/white"
                 android:textSize="15dp" />
 
         </RadioGroup>
 
-        <RadioButton
-            android:id="@+id/d3"
-            android:layout_width="match_parent"
-            android:layout_height="53dp"
-            android:text="Espresso martini."
-            android:textColor="@color/white"
-            android:textSize="15dp" />
 
         <Button
             android:id="@+id/orderBTN"
             android:layout_width="127dp"
             android:layout_height="36dp"
-            android:text="Next"
             android:layout_gravity="right"
             android:background="@drawable/custom_button"
-            />
+            android:text="Next" />
 
 
     </LinearLayout>
-
 
 
 </LinearLayout>
