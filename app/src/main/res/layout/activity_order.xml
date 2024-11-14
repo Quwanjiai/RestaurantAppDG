@@ -211,7 +211,7 @@
         android:layout_marginBottom="276dp"
         android:background="#55FFFFFF"
         android:orientation="vertical"
-        android:visibility="invisible"
+        android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         tools:visibility="visible">
@@ -243,64 +243,67 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="85dp"
-        android:layout_height="83dp"
-        android:layout_marginStart="-87dp"
-        android:layout_marginBottom="280dp"
-        android:orientation="vertical"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintStart_toEndOf="@+id/optionslayout"
-        tools:visibility="visible">
+        <LinearLayout
+            android:id="@+id/pinearlayout"
+            android:layout_width="85dp"
+            android:layout_height="83dp"
+            android:layout_marginStart="-87dp"
+            android:layout_marginBottom="280dp"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/button2"
+            app:layout_constraintStart_toEndOf="@+id/optionslayout"
+            tools:visibility="visible">
 
-        <CheckBox
-            android:id="@+id/checkisc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="is cooked"
-            android:textSize="10dp" />
+            <CheckBox
+                android:id="@+id/checkisc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="is cooked"
+                android:textSize="10dp" />
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/totalBTN"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:background="@drawable/custom_button"
+                android:text="Add order up"
+                android:textSize="10dp" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="51dp"
-        android:layout_height="87dp"
-        android:layout_marginStart="-140dp"
-        android:layout_marginBottom="279dp"
-        android:orientation="vertical"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintStart_toEndOf="@+id/optionslayout"
-        tools:visibility="visible">
+        </LinearLayout>
 
-        <Button
-            android:id="@+id/sideplus1"
-            android:layout_width="29dp"
-            android:layout_height="31dp"
-            android:text="@string/plusBT"
-            android:textAlignment="center"
-            android:textSize="10dp" />
+        <LinearLayout
+            android:id="@+id/qinearLayout"
+            android:layout_width="51dp"
+            android:layout_height="87dp"
+            android:layout_marginStart="-140dp"
+            android:layout_marginBottom="276dp"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/button2"
+            app:layout_constraintStart_toEndOf="@+id/optionslayout"
+            tools:visibility="visible">
 
-        <Button
-            android:id="@+id/sideplus2"
-            android:layout_width="28dp"
-            android:layout_height="31dp"
-            android:text="@string/plusBT"
-            android:textAlignment="center"
-            android:textSize="10dp" />
+            <CheckBox
+                android:id="@+id/riceCB"
+                android:layout_width="29dp"
+                android:layout_height="31dp"
+                />
 
-        <Button
-            android:id="@+id/sideplus3"
-            android:layout_width="28dp"
-            android:layout_height="31dp"
-            android:text="@string/plusBT"
-            android:textAlignment="center"
-            android:textSize="10dp" />
+            <CheckBox
+                android:id="@+id/waCB"
+                android:layout_width="28dp"
+                android:layout_height="31dp"
+                 />
+
+            <CheckBox
+                android:id="@+id/ykCb"
+                android:layout_width="28dp"
+                android:layout_height="31dp"
+                 />
 
 
-    </LinearLayout>
+        </LinearLayout>
 
     <TextView
         android:id="@+id/rainbowss"
@@ -308,14 +311,13 @@
         android:layout_height="27dp"
         android:layout_marginStart="107dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="444dp"
+        android:layout_marginBottom="474dp"
         android:text="@string/rainbow_rolls"
         android:textColor="@color/white"
         android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@id/pricetext"
+        app:layout_constraintBottom_toBottomOf="@+id/pricetext"
         app:layout_constraintEnd_toStartOf="@+id/plusbutton2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

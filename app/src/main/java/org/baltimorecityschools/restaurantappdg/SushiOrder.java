@@ -13,12 +13,14 @@ public class SushiOrder {
         this.isCooked = isCooked;
         this.sideText = sideText;
         this.quantity = quantity;
+        setPrice();
     }
 
     public SushiOrder(){
         isCooked = true;
         sideText = "None";
         quantity = 0;
+        setPrice();
     }
 
     public String getSideText() {
